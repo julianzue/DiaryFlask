@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Diary</h1>
+    </header>
+
+    <div class="form">
+        <p>New Entry</p>
+        <form method="post">
+            <input type="text" name="text" class="input-text" autocomplete="off">
+            <input type="submit" name="add" value="Add" class="input-btn">
+        </form>
+    </div>
+
+    <div class="list">
+        {% for line in lines %}
+            <div class="line">
+                <p>{{ line.split(" | ")[0] }}</p>
+                <p>{{ line.split(" | ")[1] }}</p>
+            </div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>

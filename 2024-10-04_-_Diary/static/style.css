@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, monospace;
+}
+
+body{
+    background: #222;
+}
+
+header{
+    padding: 20px;
+    background: #aaa;
+}
+
+.form{
+    margin: 20px;
+    background: #aaa;
+    padding: 20px;
+}
+
+.form p{
+    margin-bottom: 20px;
+}
+
+.form form{
+    display: flex;
+}
+
+.form form .input-text{
+    padding: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.form form .input-btn{
+    padding: 10px;
+    border: none;
+    background: green;
+    outline: none;
+    cursor: pointer;
+}
+
+.list{
+    background: #aaa;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px;
+    background: #ddd;
+}
